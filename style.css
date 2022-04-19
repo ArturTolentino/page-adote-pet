@@ -3,23 +3,23 @@
   padding: 0;
 }
 
-:root {
-  --color-white: #fff;
-  --color-dark1: #272727;
-
-}
-
-body{
+body {
   font-family: Arial, Helvetica, sans-serif;
-  background-color: rgb(236, 252, 236);
-}
-nav {
-  
+  background-color: antiquewhite;
 }
 
 .img_logo{
-  width: 70px;
-  height: 70px;
+  width: 4.75rem;
+  height: 4.75rem;
+  margin-top: 3px;
+  transition: .6s;
+}
+
+.img_logo:hover {
+  
+  width: 4.25rem;
+  height: 4.25rem;
+  
 }
 
 .header,
@@ -32,7 +32,7 @@ nav {
 .header {
   background-color: orange;
   box-shadow: 1px 1px 4px black;
-  height: 4rem;
+  height: 8rem;
   justify-content:space-between;
   padding: 0 10%;
 }
@@ -42,6 +42,7 @@ nav {
 }
 
 .navigation_header a {
+  font-size: 1.3rem;
   text-decoration: none;
   color: rgb(9, 151, 116);
   transition: 0.3s;
@@ -53,5 +54,118 @@ nav {
   color: white;
   border-radius: 10px;
   padding: 0.3rem;
+  
+}
+
+/* BODY */
+
+main {
+  flex-direction: column;
+  align-items: center;
+  gap: 6rem;
+  
+}
+
+section {
+  margin: 5.5rem 0rem;
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+}
+
+.text {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: orange;
+  padding-bottom: 0.8rem;
+  
+}
+
+.text p {
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+  width: 65ch;
+  
+}
+
+.conteudo_1 .imagem {
+  height: 37rem;
+  border-radius: 25px;
+
+}
+
+.titulo_2 {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: orange;
+  padding-bottom: 0.8rem;
+  text-align: center;
+}
+
+.pets {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.pets_grid {
+  gap: 3rem;
+  width: 90%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(400px, auto));
+  place-items: center;
+  
+}
+
+
+.pets_grid div {
+  width: 100%;
+  
+}
+
+.pets_grid img {
+  width: 100%;
+  object-fit: cover;
+  height: 365px;
+  transition: .3s;
+  border-radius: 5px;
+  box-shadow: 3px 5px 13px #0000003d;
+}
+
+.pets_grid img:hover {
+  transform: scale(1.1);
+  box-shadow: 4px 6px 19px #000000a8;
+}
+
+.pets_grid img:hover ~ p {
+  transform: translateY(1rem);
+}
+
+.pets_grid p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: orange;
+  padding: 1rem 0;
+  text-align: center;
+  -webkit-text-stroke-width: 0.3px;
+  -webkit-text-stroke-color: rgba(0, 0, 0, 0.123);
+  transition: .3s;
+}
+
+footer {
+  width: auto;
+  height: 12rem;
+  background-color: orange;
+}
+
+
+@media screen (max-width:320px) {
   
 }
